@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.dominokit.samples</groupId>
     <artifactId>historydemo</artifactId>
-    <version>FINAL</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>historydemo-client</artifactId>
