@@ -4,10 +4,11 @@
 
     <groupId>org.dominokit.samples</groupId>
     <artifactId>historydemo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
     <properties>
+        <snapshot.version>HEAD-SNAPSHOT</snapshot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,6 +41,33 @@
                 <inherited>false</inherited>
                 <configuration>
                     <launcherDir>${project.build.directory}/gwt/launcherDir</launcherDir>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.15.3-SNAPSHOT</version>
+                <configuration>
+                    <snapshotVersionProperty>snapshot.version</snapshotVersionProperty>
+                    <!-- Set to true to immediately bump the development version when creating a release branch -->
+                    <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
+
+                    <!-- Which digit to increas in major.minor.patch versioning, the values being 0.1.2 respectively.
+                         By default the rightmost number is increased.
+                         Pass in the number via parameter or profile to allow configuration,
+                         since everything set in the file can't be overwritten via command line -->
+                    <versionDigitToIncrement>${bump.digit}</versionDigitToIncrement>
+
+                    <!-- Execute mvn verify before release -->
+                    <preReleaseGoals>verify</preReleaseGoals>
+                    <preHotfixGoals>verify</preHotfixGoals>
+
+                    <!-- Configure branches -->
+                    <gitFlowConfig>
+                        <productionBranch>main</productionBranch>
+                        <!-- default is develop, but we use development -->
+                        <developmentBranch>development</developmentBranch>
+                    </gitFlowConfig>
                 </configuration>
             </plugin>
         </plugins>
