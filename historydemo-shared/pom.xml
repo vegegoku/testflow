@@ -16,11 +16,7 @@
       <artifactId>gwt-servlet</artifactId>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.dominokit</groupId>
-      <version>1.0-rc.4-SNAPSHOT</version>
-      <artifactId>domino-history-shared</artifactId>
-    </dependency>
+
   </dependencies>
 
   <build>

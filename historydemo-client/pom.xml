@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.dominokit.samples</groupId>
       <artifactId>historydemo-shared</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.dominokit.samples</groupId>
