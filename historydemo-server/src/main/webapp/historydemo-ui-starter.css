@@ -1,0 +1,24 @@
+/* ========== APP specific css ============*/
+.page-content {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    line-height: 500px;
+    font-size: 72px;
+    font-weight: 800;
+    border: 10px dotted #009688;
+    border-radius: 50%;
+}
+
+.home-title {
+    color: cornflowerblue;
+}
+
+.page-title {
+    color: #846e2e;
+}
+
+.search-title {
+    color: #6a224f;
+}
