@@ -4,11 +4,11 @@
 
     <groupId>org.dominokit.samples</groupId>
     <artifactId>historydemo</artifactId>
-    <version>1.0</version>
+    <version>HEAD</version>
     <packaging>pom</packaging>
 
     <properties>
-        <snapshot.version>HEAD-SNAPSHOT</snapshot.version>
+        <snapshot.version>FINAL-SNAPSHOT</snapshot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
