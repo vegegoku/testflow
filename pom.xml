@@ -4,12 +4,12 @@
 
     <groupId>org.dominokit.samples</groupId>
     <artifactId>historydemo</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <properties>
         <snapshot.version>HEAD-SNAPSHOT</snapshot.version>
-        <release.version>1.0.2</release.version>
+        <release.version>1.0.3</release.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,9 +45,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
+                <groupId>org.dominokit</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.15.3-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <snapshotVersionProperty>snapshot.version</snapshotVersionProperty>
                     <releaseVersionProperty>release.version</releaseVersionProperty>
