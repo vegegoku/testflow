@@ -45,9 +45,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
+                <groupId>org.dominokit</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.15.3-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <snapshotVersionProperty>snapshot.version</snapshotVersionProperty>
                     <releaseVersionProperty>release.version</releaseVersionProperty>
