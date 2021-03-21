@@ -4,7 +4,7 @@
 
     <groupId>org.dominokit.samples</groupId>
     <artifactId>historydemo</artifactId>
-    <version>HEAD-SNAPSHOT</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <properties>
